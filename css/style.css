@@ -12,18 +12,26 @@
   
 /* utilities */
 .bg-blue{
-    background-color: #298cd7;
+    background-color: #298cd7!important;
 }
+
+.bg-red{
+  background-color: red!important;
+}
+
 
 
 
 /* content */
 
+.topDiv{
+  margin: 50px 100px;
+}
+
 #grid {
     width: 60vw;
     height: 60vh;
-    margin: 100px auto;
-    background-color: #212a51;
+    margin: 0px 100px auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -31,6 +39,7 @@
 .cell {
     width: calc(100% / 10);
     height: calc(100% / 10);
+    background-color: #212a51;
     border: 1px solid white;
     border-radius: 8px;
     color:white;
@@ -38,5 +47,17 @@
 }
 
 
+.cell.hard {
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+}
 
-  
+.cell.medium {
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+.cell.easy {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
