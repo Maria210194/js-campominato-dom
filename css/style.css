@@ -1,0 +1,42 @@
+/* generics */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+/* utilities */
+.bg-blue{
+    background-color: #298cd7;
+}
+
+
+
+/* content */
+
+#grid {
+    width: 60vw;
+    height: 60vh;
+    margin: 100px auto;
+    background-color: #212a51;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.cell {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid white;
+    border-radius: 8px;
+    color:white;
+    font-size: 10px;
+}
+
+
+
+  
