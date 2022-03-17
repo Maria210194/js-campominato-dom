@@ -29,12 +29,17 @@
 }
 
 #grid {
-    width: 60vw;
-    height: 60vh;
-    margin: 0px 100px auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  width: 60vw;
+  height: 60vh;
+  margin: 0px 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+#grid.game-over{
+  pointer-events: none;
+}
 
 .cell {
     width: calc(100% / 10);
@@ -46,6 +51,10 @@
     font-size: 10px;
 }
 
+
+.cell.clicked{
+  pointer-events: none;
+}
 
 .cell.hard {
   width: calc(100% / 7);
@@ -61,3 +70,4 @@
   width: calc(100% / 10);
   height: calc(100% / 10);
 }
+
